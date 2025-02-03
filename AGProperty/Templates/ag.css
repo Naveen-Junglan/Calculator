@@ -1,0 +1,68 @@
+header{
+                height: 3em;
+                width: 100%;
+                z-index:111 ;
+            }
+
+            nav{
+                margin-top: 45px;
+                position: sticky;
+            }
+
+            article{
+                margin-top: 4em;                
+                height: auto;
+                width: 100%;
+                font-size: auto;
+            }
+           
+            .container{
+                /* width: 80%; */
+                height: auto;
+                margin-top: 7em;
+            }
+            .lists li{
+                list-style: none;
+                margin-right: 1em;
+                padding: 4px;
+                text-align: center;
+                justify-content: center;
+                float: left;
+                border: 2px solid red;
+                border-radius: 100%;
+                background-color: black;
+                height: 40px;
+                width: 40px;
+            }
+
+            .footer{
+                border: 2px solid black;
+                padding: 10px;
+            }
+
+            body{
+                background-color: rgb(194, 243, 166);
+            }
+            
+            .navbar-brand{
+                height:5.2em;
+                width: 5.6em;
+                margin-top: 0.5em;
+                padding: 3px;
+                margin-bottom: 1em;
+                font-size: 50px;
+                color: rgb(255, 254, 254);
+                border: 5px solid black;
+                border-radius:100% ;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                animation: ani 1s 1s linear infinite alternate;
+            }
+
+            @keyframes ani {
+                0%{ border-radius: 100%; background-color: tomato; rotate: 10deg;}
+                /* 25%{ border-radius: 0%; background-color: rgb(49, 83, 233); rotate: -10deg;} */
+                /* 75%{ border-radius: 100%; background-color: tomato; rotate: -10deg;} */
+                100%{ border-radius: 0%; background-color: tomato; rotate: -10deg; color: black;}
+
+            }

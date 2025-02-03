@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    
+        <b>WELCOME TO........... <strong class="text-light bg-danger"><br> Apru Garhwal Properties (A.G.Properties) </strong><br><br>
+        Dear Sir/Madam,</b><br>
+        If You want to sale, purchage or buy and rent as well, the property anywhere in Dwarka, So you can either fill out the below form or contact me. <br><br>
+        <div class="">
+            <fieldset>
+                <legend class="justify-content-centered"><strong class="bg bg-white text-center text-dark"><u>......Yours Details......</u></strong></legend>
+                <form class="was-validated">
+                    <h6 class="text-danger"><b>Note:</b> * field fill neccesary</h6>
+                    <div class="">
+                        <div class="col">
+                            <div><label for="user"><b><i class="fa-solid fa-user"></i>  User Name: *</b></label></div>
+                            <div class="input-group-sm mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" name="uname" id="user" placeholder="Enter the Name" class="form-control-sm"
+                                        onfocus="focusFunction(this)" onblur="blurFunction(this)" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="valid-feedback">Valid</div>
+                        <div class="invalid-feedback">Plese Fill out the required field</div><br>
+                
+                        <div class="col">
+                            <div><label for="phone"><b><i class="fa-solid fa-mobile-screen-button"></i> Mobile Number: *</b></label></div>
+                            <div class="input-group-sm">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">+91</span>
+                                    <input type="phone" name="phone" id="phone" placeholder="Enter the Mobile Number"
+                                        class="form-control-sm" onfocus="focusFunction(this)" onblur="blurFunction(this)" required>
+                                </div>
+                
+                            </div><br>
+                            <div class="valid-feedback">Valid</div>
+                            <div class="invalid-feedback">Plese Fill out the required field</div>
+                        </div><br>
+                
+                        <div class="">
+                            <div class="col">
+                                <div><label for="e-mail"><b><i class="fa-solid fa-envelope"></i> E-mail: *</b></label></div>
+                                <div class="input-group-sm mb-3 email">
+                                    <div>
+                                        <input type="email" name="email" id="e-mail" placeholder="Enter the e-mail"
+                                            class="form-control-sm" onfocus="focusFunction(this)" onblur="blurFunction(this)" required>
+                                    </div>
+                                    <div class="valid-feedback">Valid</div>
+                                    <div class="invalid-feedback">Plese Fill out the required field</div>
+                                </div>
+                            </div><br>
+                
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="my-select"><b><i class="fa-solid fa-check"></i> Selecct</b> whatever you want:</label><br>
+                                    <select id="my-select" style="width: 10em;" name="" onfocus="focusFunction(this)" onblur="blurFunction(this)">
+                                        <option value="" active>Select</option>
+                                        <option value="Buy">Buy</option>
+                                        <option value="Sale">Sale</option>
+                                        <option value="Rent">Rent</option>
+                                    </select>
+                                </div>
+                            </div>
+                
+                            <div class="valid-feedback">Valid</div>
+                            <div class="invalid-feedback">Plese Fill out the required field</div>
+                        </div><br>
+                
+                        <div class="col">
+                            <label for="area"><b><i class="fa-solid fa-comment"></i> Comment:</b><br>
+                                <textarea id="area" rows="5" cols="5" placeholder="Write Something here......"
+                                    onfocus="focusFunction(this)" onblur="blurFunction(this)"></textarea>
+                            </label><br><br>
+                            <input type="submit" id="save" class="btn bg-success text-light" value="Save Form">
+                            <input type="reset" id="reset" class="btn bg-danger text-light" value="Reset Form">
+                        </div><br>
+                
+                
+                
+                </form>
+            </fieldset>
+        </div><br><br>
+        
+        
+        <i class="text-primary"><b>Something About Me</b></i><br>
+        I am Mohan Singh from Uttrakhand very passionate person with my work. <br>
+        And would like to say, that I have been working since year 2012 in this field. <br> 
+        Early, I used to work as a normal worker to get some experience, and after getting experience I decided to open my own
+        office location has maintioned in the <b><a href="/contact-us" class="text-success">contact-us</a></b> section you can check it 
+        and meterialized in year 2018. <br><br><br>
+        
+         
+
+    </b>
+</div>
+
+
+
+{% endblock %}
